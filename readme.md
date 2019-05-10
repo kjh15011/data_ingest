@@ -31,4 +31,25 @@ agent1.sinks.sink1.channel = ch1
 
 ```
 
-## day two
+## day two(TEST)
+
+
+
+
+### 01
+```
+sqoop import --connect jdbc:mysql://localhost/loudacre --username training --password training --table accounts --target-dir /loudacre/accounts/user_info --null-non-string '\\N'
+```
+![git01.png](git01.png)
+### 02
+
+```
+sqoop import --connect jdbc:mysql://localhost/loudacre --username training -P --table accounts --target-dir /loudacre/accounts/user_compressed --compression-codec org.apache.hadoop.io.compress.SnappyCodec --as-parquetfile
+```
+
+![git02.png](git02.png)
+### 03
+
+```
+sqoop import --connect jdbc:mysql://localhost/loudacre --username training -P --table accounts --where "state = California" --target-dir /loudacre/accounts/CA --compression-codec org.apache.hadoop.io.compress.SnappyCodec --as-parquetfile
+```
