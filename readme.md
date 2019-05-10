@@ -1,3 +1,11 @@
+#Flume_Kafka Class (Jeewoong Seong Output)
+
+## day one
+
+### flume netcat
+
+![output.png](output.png)
+
 ```
 
 agent1.sources = src1
@@ -22,3 +30,5 @@ agent1.sources.src1.channels = ch1
 agent1.sinks.sink1.channel = ch1
 
 ```
+
+## day two
