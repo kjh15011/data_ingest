@@ -1,4 +1,4 @@
-#Flume_Kafka Class (Jeewoong Seong Output)
+# Flume_Kafka Class (Jeewoong Seong Output)
 
 ## day one
 
